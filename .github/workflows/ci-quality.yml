@@ -1,0 +1,55 @@
+name: CI Quality Governance
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install radon coverage
+
+      # 1️⃣ Cyclomatic Complexity
+      - name: Run Radon (Cyclomatic Complexity)
+        run: |
+          radon cc conduit/ -a -s > radon-report.txt
+          cat radon-report.txt
+
+      - name: Complexity Quality Gate
+        run: |
+          if grep -E " D | E | F " radon-report.txt; then
+            echo "❌ Complexity too high"
+            exit 1
+          else
+            echo "✅ Cyclomatic complexity within acceptable limits"
+          fi
+
+      # 2️⃣ Code Coverage (aunque no haya tests)
+      - name: Run Coverage
+        run: |
+          coverage run manage.py test || true
+          coverage report -m > coverage-report.txt
+          cat coverage-report.txt
+
+      - name: Coverage Quality Gate
+        run: |
+          TOTAL=$(coverage report | grep TOTAL | awk '{print $4}' | sed 's/%//')
+          echo "Total coverage: $TOTAL%"
+          if [ "$TOTAL" -lt 50 ]; then
+            echo "⚠️ Coverage below target (50%)"
+          else
+            echo "✅ Coverage acceptable"
+          fi

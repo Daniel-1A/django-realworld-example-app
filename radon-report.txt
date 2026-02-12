@@ -1,0 +1,138 @@
+conduit/apps/articles/models.py
+    C 6:0 Article - A (2)
+    C 42:0 Tag - A (2)
+    M 26:4 Article.__str__ - A (1)
+    C 30:0 Comment - A (1)
+    M 46:4 Tag.__str__ - A (1)
+conduit/apps/articles/relations.py
+    C 6:0 TagRelatedField - A (2)
+    M 7:4 TagRelatedField.get_queryset - A (1)
+    M 10:4 TagRelatedField.to_internal_value - A (1)
+    M 15:4 TagRelatedField.to_representation - A (1)
+conduit/apps/articles/renderers.py
+    C 4:0 ArticleJSONRenderer - A (1)
+    C 10:0 CommentJSONRenderer - A (1)
+conduit/apps/articles/serializers.py
+    M 59:4 ArticleSerializer.get_favorited - A (3)
+    C 9:0 ArticleSerializer - A (2)
+    M 44:4 ArticleSerializer.create - A (2)
+    C 77:0 CommentSerializer - A (2)
+    C 108:0 TagSerializer - A (2)
+    M 56:4 ArticleSerializer.get_created_at - A (1)
+    M 70:4 ArticleSerializer.get_favorites_count - A (1)
+    M 73:4 ArticleSerializer.get_updated_at - A (1)
+    M 93:4 CommentSerializer.create - A (1)
+    M 101:4 CommentSerializer.get_created_at - A (1)
+    M 104:4 CommentSerializer.get_updated_at - A (1)
+    M 113:4 TagSerializer.to_representation - A (1)
+conduit/apps/articles/signals.py
+    F 9:0 add_slug_to_article_if_not_exists - B (6)
+conduit/apps/articles/views.py
+    M 25:4 ArticleViewSet.get_queryset - A (4)
+    C 14:0 ArticleViewSet - A (3)
+    C 109:0 CommentsListCreateAPIView - A (3)
+    C 144:0 CommentsDestroyAPIView - A (3)
+    C 160:0 ArticlesFavoriteAPIView - A (3)
+    M 71:4 ArticleViewSet.retrieve - A (2)
+    M 87:4 ArticleViewSet.update - A (2)
+    M 128:4 CommentsListCreateAPIView.create - A (2)
+    M 149:4 CommentsDestroyAPIView.destroy - A (2)
+    M 165:4 ArticlesFavoriteAPIView.delete - A (2)
+    M 180:4 ArticlesFavoriteAPIView.post - A (2)
+    C 196:0 TagListAPIView - A (2)
+    C 211:0 ArticlesFeedAPIView - A (2)
+    M 44:4 ArticleViewSet.create - A (1)
+    M 59:4 ArticleViewSet.list - A (1)
+    M 120:4 CommentsListCreateAPIView.filter_queryset - A (1)
+    M 202:4 TagListAPIView.list - A (1)
+    M 217:4 ArticlesFeedAPIView.get_queryset - A (1)
+    M 222:4 ArticlesFeedAPIView.list - A (1)
+conduit/apps/articles/__init__.py
+    C 4:0 ArticlesAppConfig - A (2)
+    M 9:4 ArticlesAppConfig.ready - A (1)
+conduit/apps/articles/migrations/0001_initial.py
+    C 9:0 Migration - A (1)
+conduit/apps/articles/migrations/0002_comment.py
+    C 9:0 Migration - A (1)
+conduit/apps/articles/migrations/0003_auto_20160828_1656.py
+    C 8:0 Migration - A (1)
+conduit/apps/authentication/backends.py
+    C 10:0 JWTAuthentication - B (6)
+    M 13:4 JWTAuthentication.authenticate - A (5)
+    M 72:4 JWTAuthentication._authenticate_credentials - A (4)
+conduit/apps/authentication/models.py
+    C 14:0 UserManager - A (4)
+    M 24:4 UserManager.create_user - A (3)
+    M 38:4 UserManager.create_superuser - A (2)
+    C 56:0 User - A (2)
+    M 92:4 User.__str__ - A (1)
+    M 100:4 User.token - A (1)
+    M 111:4 User.get_full_name - A (1)
+    M 119:4 User.get_short_name - A (1)
+    M 127:4 User._generate_jwt_token - A (1)
+conduit/apps/authentication/renderers.py
+    C 4:0 UserJSONRenderer - A (4)
+    M 10:4 UserJSONRenderer.render - A (3)
+conduit/apps/authentication/serializers.py
+    C 36:0 LoginSerializer - B (6)
+    M 42:4 LoginSerializer.validate - A (5)
+    C 99:0 UserSerializer - A (5)
+    M 139:4 UserSerializer.update - A (4)
+    C 10:0 RegistrationSerializer - A (2)
+    M 31:4 RegistrationSerializer.create - A (1)
+conduit/apps/authentication/signals.py
+    F 8:0 create_related_profile - A (3)
+conduit/apps/authentication/views.py
+    C 13:0 RegistrationAPIView - A (2)
+    C 32:0 LoginAPIView - A (2)
+    C 50:0 UserRetrieveUpdateAPIView - A (2)
+    M 19:4 RegistrationAPIView.post - A (1)
+    M 37:4 LoginAPIView.post - A (1)
+    M 55:4 UserRetrieveUpdateAPIView.retrieve - A (1)
+    M 63:4 UserRetrieveUpdateAPIView.update - A (1)
+conduit/apps/authentication/__init__.py
+    C 4:0 AuthenticationAppConfig - A (2)
+    M 9:4 AuthenticationAppConfig.ready - A (1)
+conduit/apps/authentication/migrations/0001_initial.py
+    C 8:0 Migration - A (1)
+conduit/apps/core/exceptions.py
+    F 35:0 _handle_not_found_error - A (4)
+    F 3:0 core_exception_handler - A (2)
+    F 26:0 _handle_generic_error - A (1)
+conduit/apps/core/models.py
+    C 4:0 TimestampedModel - A (1)
+conduit/apps/core/renderers.py
+    C 6:0 ConduitJSONRenderer - A (4)
+    M 12:4 ConduitJSONRenderer.render - A (3)
+conduit/apps/core/utils.py
+    F 6:0 generate_random_string - A (2)
+conduit/apps/profiles/exceptions.py
+    C 4:0 ProfileDoesNotExist - A (1)
+conduit/apps/profiles/models.py
+    C 6:0 Profile - A (2)
+    M 41:4 Profile.__str__ - A (1)
+    M 44:4 Profile.follow - A (1)
+    M 48:4 Profile.unfollow - A (1)
+    M 52:4 Profile.is_following - A (1)
+    M 56:4 Profile.is_followed_by - A (1)
+    M 60:4 Profile.favorite - A (1)
+    M 64:4 Profile.unfavorite - A (1)
+    M 68:4 Profile.has_favorited - A (1)
+conduit/apps/profiles/renderers.py
+    C 4:0 ProfileJSONRenderer - A (1)
+conduit/apps/profiles/serializers.py
+    C 6:0 ProfileSerializer - A (4)
+    M 23:4 ProfileSerializer.get_following - A (3)
+    M 17:4 ProfileSerializer.get_image - A (2)
+conduit/apps/profiles/views.py
+    C 34:0 ProfileFollowAPIView - A (4)
+    C 13:0 ProfileRetrieveAPIView - A (3)
+    M 55:4 ProfileFollowAPIView.post - A (3)
+    M 19:4 ProfileRetrieveAPIView.retrieve - A (2)
+    M 39:4 ProfileFollowAPIView.delete - A (2)
+conduit/apps/profiles/migrations/0001_initial.py
+    C 10:0 Migration - A (1)
+conduit/apps/profiles/migrations/0002_profile_follows.py
+    C 8:0 Migration - A (1)
+conduit/apps/profiles/migrations/0003_profile_favorites.py
+    C 8:0 Migration - A (1)
