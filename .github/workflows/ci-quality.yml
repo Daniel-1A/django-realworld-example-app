@@ -30,8 +30,8 @@ jobs:
 
       - name: Complexity Quality Gate
         run: |
-          if grep -E " D | E | F " radon-report.txt; then
-            echo "❌ Complexity too high"
+          if grep -E "\([D-F]\)" radon-report.txt; then
+            echo "❌ Cyclomatic complexity too high (D or worse)"
             exit 1
           else
             echo "✅ Cyclomatic complexity within acceptable limits"
