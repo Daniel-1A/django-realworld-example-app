@@ -53,3 +53,14 @@ jobs:
           else
             echo "✅ Coverage acceptable"
           fi
+      
+      # 3️⃣ Generate Coverage XML (para SonarCloud)
+      - name: Generate Coverage XML
+        run: coverage xml -o coverage.xml
+
+      # 4️⃣ SonarCloud Scan
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
