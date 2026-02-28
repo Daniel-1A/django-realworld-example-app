@@ -1,0 +1,126 @@
+{
+    "$schema": "http://cyclonedx.org/schema/bom-1.4.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.4",
+    "serialNumber": "urn:uuid:427c6a7d-c3d6-4007-ad6b-6e396d8b2885",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2026-02-28T21:01:51.864983+00:00",
+        "tools": [
+            {
+                "vendor": "CycloneDX",
+                "name": "cyclonedx-bom",
+                "version": "3.11.7"
+            },
+            {
+                "vendor": "CycloneDX",
+                "name": "cyclonedx-python-lib",
+                "version": "3.1.5",
+                "externalReferences": [
+                    {
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/actions",
+                        "type": "build-system"
+                    },
+                    {
+                        "url": "https://pypi.org/project/cyclonedx-python-lib/",
+                        "type": "distribution"
+                    },
+                    {
+                        "url": "https://cyclonedx.github.io/cyclonedx-python-lib/",
+                        "type": "documentation"
+                    },
+                    {
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues",
+                        "type": "issue-tracker"
+                    },
+                    {
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/LICENSE",
+                        "type": "license"
+                    },
+                    {
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib/blob/main/CHANGELOG.md",
+                        "type": "release-notes"
+                    },
+                    {
+                        "url": "https://github.com/CycloneDX/cyclonedx-python-lib",
+                        "type": "vcs"
+                    },
+                    {
+                        "url": "https://cyclonedx.org",
+                        "type": "website"
+                    }
+                ]
+            }
+        ]
+    },
+    "components": [
+        {
+            "type": "library",
+            "bom-ref": "20e5d6bb-b2fc-4c5d-a1a4-d59b8174c627",
+            "name": "Django",
+            "version": "1.10.5",
+            "purl": "pkg:pypi/django@1.10.5"
+        },
+        {
+            "type": "library",
+            "bom-ref": "2c2fde82-1e67-4fab-a030-57bc6092f1e3",
+            "name": "PyJWT",
+            "version": "1.4.2",
+            "purl": "pkg:pypi/pyjwt@1.4.2"
+        },
+        {
+            "type": "library",
+            "bom-ref": "db3f811d-ea0a-44b0-a2cc-18fcc74e1872",
+            "name": "django-cors-middleware",
+            "version": "1.3.1",
+            "purl": "pkg:pypi/django-cors-middleware@1.3.1"
+        },
+        {
+            "type": "library",
+            "bom-ref": "e1a52343-0c19-4985-b5ec-a74994d2c95c",
+            "name": "django-extensions",
+            "version": "1.7.1",
+            "purl": "pkg:pypi/django-extensions@1.7.1"
+        },
+        {
+            "type": "library",
+            "bom-ref": "76c8a933-c5e0-4ad5-8634-c05e369c9d7a",
+            "name": "djangorestframework",
+            "version": "3.4.4",
+            "purl": "pkg:pypi/djangorestframework@3.4.4"
+        },
+        {
+            "type": "library",
+            "bom-ref": "f7e34fe5-180f-46f0-9eb4-e91fe8947671",
+            "name": "six",
+            "version": "1.10.0",
+            "purl": "pkg:pypi/six@1.10.0"
+        }
+    ],
+    "dependencies": [
+        {
+            "ref": "20e5d6bb-b2fc-4c5d-a1a4-d59b8174c627",
+            "dependsOn": []
+        },
+        {
+            "ref": "2c2fde82-1e67-4fab-a030-57bc6092f1e3",
+            "dependsOn": []
+        },
+        {
+            "ref": "db3f811d-ea0a-44b0-a2cc-18fcc74e1872",
+            "dependsOn": []
+        },
+        {
+            "ref": "e1a52343-0c19-4985-b5ec-a74994d2c95c",
+            "dependsOn": []
+        },
+        {
+            "ref": "76c8a933-c5e0-4ad5-8634-c05e369c9d7a",
+            "dependsOn": []
+        },
+        {
+            "ref": "f7e34fe5-180f-46f0-9eb4-e91fe8947671",
+            "dependsOn": []
+        }
+    ]
+}
