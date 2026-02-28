@@ -1,0 +1,19 @@
+repos:
+  - repo: local
+    hooks:
+      - id: prevent-secrets
+        name: Prevent committing secrets
+        entry: |
+          powershell -Command "
+          $files = git diff --cached --name-only;
+          foreach ($file in $files) {
+            if ($file -ne '.pre-commit-config.yaml' -and (Test-Path $file)) {
+              if (Select-String -Path $file -Pattern 'API_KEY|SECRET|PASSWORD' -Quiet) {
+                Write-Host '❌ Secret detected. Commit blocked.';
+                exit 1;
+              }
+            }
+          }
+          "
+        language: system
+        pass_filenames: false
