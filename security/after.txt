@@ -1,0 +1,711 @@
++==============================================================================+
+
+                               /$$$$$$            /$$
+                              /$$__  $$          | $$
+           /$$$$$$$  /$$$$$$ | $$  \__//$$$$$$  /$$$$$$   /$$   /$$
+          /$$_____/ |____  $$| $$$$   /$$__  $$|_  $$_/  | $$  | $$
+         |  $$$$$$   /$$$$$$$| $$_/  | $$$$$$$$  | $$    | $$  | $$
+          \____  $$ /$$__  $$| $$    | $$_____/  | $$ /$$| $$  | $$
+          /$$$$$$$/|  $$$$$$$| $$    |  $$$$$$$  |  $$$$/|  $$$$$$$
+         |_______/  \_______/|__/     \_______/   \___/   \____  $$
+                                                          /$$  | $$
+                                                         |  $$$$$$/
+  by pyup.io                                              \______/
+
++==============================================================================+
+
+ [1mREPORT[0m 
+
+  Safety [1mv2.3.5[0m is scanning for [1mVulnerabilities[0m[1m...[0m
+[1m  Scanning dependencies[0m in your [1menvironment:[0m
+
+  -> /usr/local/lib/python3.6/site-packages
+
+  Using [1mnon-commercial database[0m
+[1m  Found and scanned 27 packages[0m
+  Timestamp [1m2026-02-28 21:52:45[0m
+[1m  67[0m[1m vulnerabilities found[0m
+[1m  0[0m[1m vulnerabilities ignored[0m
+
++==============================================================================+
+ [31m[1mVULNERABILITIES FOUND[0m 
++==============================================================================+
+
+[31m-> Vulnerability found in setuptools version 59.6.0
+[0m[1m   Vulnerability ID: [0m72236
+[1m   Affected spec: [0m<70.0.0
+[1m   ADVISORY: [0mAffected versions of Setuptools allow for remote code
+   execution via its download functions. These functions, which are used to...
+[1m   CVE-2024-6345[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72236/f17[0m
+
+
+[31m-> Vulnerability found in setuptools version 59.6.0
+[0m[1m   Vulnerability ID: [0m52495
+[1m   Affected spec: [0m<65.5.1
+[1m   ADVISORY: [0mSetuptools 65.5.1 includes a fix for CVE-2022-40897: Python
+   Packaging Authority (PyPA) setuptools before 65.5.1 allows remote...
+[1m   CVE-2022-40897[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/52495/f17[0m
+
+
+[31m-> Vulnerability found in setuptools version 59.6.0
+[0m[1m   Vulnerability ID: [0m76752
+[1m   Affected spec: [0m<78.1.1
+[1m   ADVISORY: [0mAffected versions of Setuptools are vulnerable to Path
+   Traversal via PackageIndex.download(). The impact is Arbitrary File...
+[1m   CVE-2025-47273[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/76752/f17[0m
+
+
+[31m-> Vulnerability found in pip version 21.2.4
+[0m[1m   Vulnerability ID: [0m79883
+[1m   Affected spec: [0m<25.2
+[1m   ADVISORY: [0mAffected versions of the pip package are vulnerable to
+   Arbitrary File Overwrite due to improper validation of symbolic link...
+[1m   CVE-2025-8869[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/79883/f17[0m
+
+
+[31m-> Vulnerability found in pip version 21.2.4
+[0m[1m   Vulnerability ID: [0m75180
+[1m   Affected spec: [0m<25.0
+[1m   ADVISORY: [0mPip solves a security vulnerability that previously allowed
+   maliciously crafted wheel files to execute unauthorized code during...
+[1m   PVE-2025-75180[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/75180/f17[0m
+
+
+[31m-> Vulnerability found in pip version 21.2.4
+[0m[1m   Vulnerability ID: [0m62044
+[1m   Affected spec: [0m<23.3
+[1m   ADVISORY: [0mAffected versions of Pip are vulnerable to Command
+   Injection. When installing a package from a Mercurial VCS URL (ie "pip...
+[1m   CVE-2023-5752[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/62044/f17[0m
+
+
+[31m-> Vulnerability found in zipp version 3.6.0
+[0m[1m   Vulnerability ID: [0m72132
+[1m   Affected spec: [0m<3.19.1
+[1m   ADVISORY: [0mA Denial of Service (DoS) vulnerability exists in the
+   jaraco/zipp library. The vulnerability is triggered when processing a...
+[1m   CVE-2024-5569[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72132/f17[0m
+
+
+[31m-> Vulnerability found in djangorestframework version 3.4.4
+[0m[1m   Vulnerability ID: [0m38841
+[1m   Affected spec: [0m<3.11.2
+[1m   ADVISORY: [0mA flaw was found in Django REST Framework versions before
+   3.12.0 and before 3.11.2. When using the browseable API viewer, Django...
+[1m   CVE-2020-25626[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/38841/f17[0m
+
+
+[31m-> Vulnerability found in djangorestframework version 3.4.4
+[0m[1m   Vulnerability ID: [0m71849
+[1m   Affected spec: [0m<3.15.2
+[1m   ADVISORY: [0mAffected versions of the package djangorestframework are
+   vulnerable to Cross-site Scripting (XSS) via the break_long_headers...
+[1m   CVE-2024-21520[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/71849/f17[0m
+
+
+[31m-> Vulnerability found in djangorestframework version 3.4.4
+[0m[1m   Vulnerability ID: [0m43472
+[1m   Affected spec: [0m<3.9.1
+[1m   ADVISORY: [0mDjangorestframework 3.9.1 includes a fix for an XSS
+   vulnerability.https://github.com/encode/django-rest-...
+[1m   CVE-2018-25045[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/43472/f17[0m
+
+
+[31m-> Vulnerability found in requests version 2.27.0
+[0m[1m   Vulnerability ID: [0m77680
+[1m   Affected spec: [0m<2.32.4
+[1m   ADVISORY: [0mRequests is an HTTP library. Due to a URL parsing issue,
+   Requests releases prior to 2.32.4 may leak .netrc credentials to third...
+[1m   CVE-2024-47081[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/77680/f17[0m
+
+
+[31m-> Vulnerability found in requests version 2.27.0
+[0m[1m   Vulnerability ID: [0m58755
+[1m   Affected spec: [0m>=2.3.0,<2.31.0
+[1m   ADVISORY: [0mAffected versions of Requests are vulnerable to proxy
+   credential leakage. When redirected to an HTTPS endpoint, the Proxy-...
+[1m   CVE-2023-32681[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/58755/f17[0m
+
+
+[31m-> Vulnerability found in requests version 2.27.0
+[0m[1m   Vulnerability ID: [0m71064
+[1m   Affected spec: [0m<2.32.2
+[1m   ADVISORY: [0mAffected versions of Requests, when making requests through
+   a Requests `Session`, if the first request is made with `verify=False` to...
+[1m   CVE-2024-35195[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/71064/f17[0m
+
+
+[31m-> Vulnerability found in urllib3 version 1.26.20
+[0m[1m   Vulnerability ID: [0m84031
+[1m   Affected spec: [0m>=1.22,<2.6.3
+[1m   ADVISORY: [0mAffected versions of the urllib3 package are vulnerable to
+   Denial of Service (DoS) due to redirect handling that drains connections...
+[1m   CVE-2026-21441[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/84031/f17[0m
+
+
+[31m-> Vulnerability found in urllib3 version 1.26.20
+[0m[1m   Vulnerability ID: [0m82332
+[1m   Affected spec: [0m>=1.0,<2.6.0
+[1m   ADVISORY: [0mAffected versions of the urllib3 package are vulnerable to
+   Denial of Service (DoS) due to improper handling of highly compressed HTTP...
+[1m   CVE-2025-66471[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/82332/f17[0m
+
+
+[31m-> Vulnerability found in urllib3 version 1.26.20
+[0m[1m   Vulnerability ID: [0m77744
+[1m   Affected spec: [0m<2.5.0
+[1m   ADVISORY: [0murllib3 is a user-friendly HTTP client library for Python.
+   Prior to 2.5.0, it is possible to disable redirects for all requests by...
+[1m   CVE-2025-50181[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/77744/f17[0m
+
+
+[31m-> Vulnerability found in urllib3 version 1.26.20
+[0m[1m   Vulnerability ID: [0m82331
+[1m   Affected spec: [0m>=1.24,<2.6.0
+[1m   ADVISORY: [0mAffected versions of the urllib3 package are vulnerable to
+   Denial of Service (DoS) due to allowing an unbounded number of content-...
+[1m   CVE-2025-66418[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/82331/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m43041
+[1m   Affected spec: [0m<2.2.25
+[1m   ADVISORY: [0mDjango versions 2.2.25, 3.1.14 and 3.2.10 include a fix for
+   CVE-2021-44420: In Django 2.2 before 2.2.25, 3.1 before 3.1.14, and 3.2...
+[1m   CVE-2021-44420[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/43041/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m35740
+[1m   Affected spec: [0m>=1.10.0a1,<1.10.7
+[1m   ADVISORY: [0mDjango versions 1.10.7, 1.9.13 and 1.8.18 include a fix for
+   CVE-2017-7234: A maliciously crafted URL to a Django (1.10 before 1.10.7,...
+[1m   CVE-2017-7234[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/35740/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m64976
+[1m   Affected spec: [0m<3.2.24
+[1m   ADVISORY: [0mAffected versions of Django are vulnerable to potential
+   denial-of-service in intcomma template filter when used with very long...
+[1m   CVE-2024-24680[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/64976/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m36884
+[1m   Affected spec: [0m<1.11.19
+[1m   ADVISORY: [0mDjango 1.11.19, 2.0.11 and 2.1.6 include a fix for
+   CVE-2019-6975: Uncontrolled Memory Consumption via a malicious attacker-...
+[1m   CVE-2019-6975[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/36884/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m72095
+[1m   Affected spec: [0m<4.2.14
+[1m   ADVISORY: [0mAffected versions of Django are affected by a potential
+   denial-of-service vulnerability in the django.utils.html.urlize()...
+[1m   CVE-2024-38875[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72095/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m72110
+[1m   Affected spec: [0m<4.2.14
+[1m   ADVISORY: [0mAffected versions of Django are affected by a directory-
+   traversal vulnerability in the Storage.save() method. Derived classes of...
+[1m   CVE-2024-39330[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72110/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m72111
+[1m   Affected spec: [0m<4.2.14
+[1m   ADVISORY: [0mAffected versions of Django are potentially vulnerable to
+   denial-of-service via the get_supported_language_variant() method. This...
+[1m   CVE-2024-39614[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72111/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m72109
+[1m   Affected spec: [0m<4.2.14
+[1m   ADVISORY: [0mAffected versions of Django are affected by a username
+   enumeration vulnerability caused by timing differences in the...
+[1m   CVE-2024-39329[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72109/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m34918
+[1m   Affected spec: [0m<1.10.8
+[1m   ADVISORY: [0mDjango 1.10.8 and 1.11.5 include a fix for CVE-2017-12794:
+   In Django 1.10.x before 1.10.8 and 1.11.x before 1.11.5, HTML autoescaping...
+[1m   CVE-2017-12794[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/34918/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m55264
+[1m   Affected spec: [0m<3.2.19
+[1m   ADVISORY: [0mDjango 4.2.1, 4.1.9 and 3.2.19 include a fix for
+   CVE-2023-31047: In Django 3.2 before 3.2.19, 4.x before 4.1.9, and 4.2...
+[1m   CVE-2023-31047[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/55264/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m51340
+[1m   Affected spec: [0m<3.2.16
+[1m   ADVISORY: [0mIn Django 3.2 before 3.2.16, 4.0 before 4.0.8, and 4.1
+   before 4.1.2, internationalized URLs were subject to a potential denial of...
+[1m   CVE-2022-41323[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/51340/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m40638
+[1m   Affected spec: [0m<2.2.24
+[1m   ADVISORY: [0mDjango 2.2.24, 3.1.12, and 3.2.4 include a fix for
+   CVE-2021-33571: In Django 2.2 before 2.2.24, 3.x before 3.1.12, and 3.2...
+[1m   CVE-2021-33571[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/40638/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m72515
+[1m   Affected spec: [0m<4.2.15
+[1m   ADVISORY: [0mDjango addresses a memory exhaustion issue in
+   django.utils.numberformat.floatformat(). When floatformat receives a...
+[1m   CVE-2024-41990[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72515/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m72521
+[1m   Affected spec: [0m<4.2.15
+[1m   ADVISORY: [0mAffected versions of Django has a potential SQL injection
+   vulnerability in the QuerySet.values() and QuerySet.values_list() methods....
+[1m   CVE-2024-42005[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72521/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m72520
+[1m   Affected spec: [0m<4.2.15
+[1m   ADVISORY: [0mDjango has a potential denial-of-service vulnerability in
+   django.utils.html.urlize() and AdminURLFieldWidget. The urlize and...
+[1m   CVE-2024-41991[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72520/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m40404
+[1m   Affected spec: [0m<2.2.21
+[1m   ADVISORY: [0mDjango 2.2.21, 3.1.9 and 3.2.1 include a fix for
+   CVE-2021-31542: MultiPartParser, UploadedFile, and FieldFile allowed...
+[1m   CVE-2021-31542[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/40404/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m82188
+[1m   Affected spec: [0m<4.2.27
+[1m   ADVISORY: [0mDjango fixes a potential denial-of-service vulnerability in
+   XML ``Deserializer``.
+[1m   CVE-2025-64460[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/82188/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m82187
+[1m   Affected spec: [0m<4.2.27
+[1m   ADVISORY: [0mDjango fixes potential SQL injection in
+   ``FilteredRelation`` column aliases on PostgreSQL.
+[1m   CVE-2025-13372[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/82187/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m59293
+[1m   Affected spec: [0m<3.2.20
+[1m   ADVISORY: [0mAffected versions of Django are vulnerable to a potential
+   ReDoS (regular expression denial of service) in EmailValidator and...
+[1m   CVE-2023-36053[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/59293/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m48040
+[1m   Affected spec: [0m<2.2.28
+[1m   ADVISORY: [0mDjango 2.2.28, 3.2.13 and 4.0.4 include a fix for
+   CVE-2022-28347: A SQL injection issue was discovered in QuerySet.explain()...
+[1m   CVE-2022-28347[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/48040/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m48041
+[1m   Affected spec: [0m<2.2.28
+[1m   ADVISORY: [0mDjango 2.2.28, 3.2.13 and 4.0.4 include a fix for
+   CVE-2022-28346: An issue was discovered in Django 2.2 before 2.2.28, 3.2...
+[1m   CVE-2022-28346[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/48041/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m65771
+[1m   Affected spec: [0m<3.2.25
+[1m   ADVISORY: [0mAffected versions of Django are vulnerable to potential
+   regular expression denial-of-service (REDoS)....
+[1m   CVE-2024-27351[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/65771/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m53315
+[1m   Affected spec: [0m<3.2.18
+[1m   ADVISORY: [0mDjango 4.1.7, 4.0.10 and 3.2.18 include a fix for
+   CVE-2023-24580: Potential denial-of-service vulnerability in file...
+[1m   CVE-2023-24580[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/53315/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m77686
+[1m   Affected spec: [0m<4.2.22
+[1m   ADVISORY: [0mAn issue was discovered in Django 5.2 before 5.2.3, 5.1
+   before 5.1.11, and 4.2 before 4.2.23. Internal HTTP response logging does...
+[1m   CVE-2025-48432[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/77686/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m74396
+[1m   Affected spec: [0m<4.2.17
+[1m   ADVISORY: [0mDjango affected versions are vulnerable to a potential SQL
+   injection in the HasKey(lhs, rhs) lookup on Oracle databases. The...
+[1m   CVE-2024-53908[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/74396/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m74395
+[1m   Affected spec: [0m<4.2.17
+[1m   ADVISORY: [0mAffected versions of Django are vulnerable to a potential
+   denial-of-service (DoS) attack in the `django.utils.html.strip_tags()`...
+[1m   CVE-2024-53907[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/74395/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m62126
+[1m   Affected spec: [0m<3.2.23
+[1m   ADVISORY: [0mDjango 4.2.7, 4.1.13 and 3.2.23 include a fix for
+   CVE-2023-46695: Potential denial of service vulnerability in UsernameField...
+[1m   CVE-2023-46695[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/62126/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m73023
+[1m   Affected spec: [0m<4.2.16
+[1m   ADVISORY: [0mA potential denial-of-service vulnerability has been
+   identified in Django's urlize() and urlizetrunc() functions in...
+[1m   CVE-2024-45230[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/73023/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m73028
+[1m   Affected spec: [0m<4.2.16
+[1m   ADVISORY: [0mA security vulnerability has been discovered in certain
+   versions of Django, affecting the password reset functionality. The...
+[1m   CVE-2024-45231[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/73028/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m37326
+[1m   Affected spec: [0m<1.11.23
+[1m   ADVISORY: [0mDjango 1.11.23, 2.1.11 and 2.2.4 include a fix for
+   CVE-2019-14232: If django.utils.text.Truncator's chars() and words()...
+[1m   CVE-2019-14232[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/37326/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m44426
+[1m   Affected spec: [0m<2.2.26
+[1m   ADVISORY: [0mDjango 2.2.26, 3.2.11 and 4.0.1 include a fix for
+   CVE-2021-45452: Storage.save in Django 2.2 before 2.2.26, 3.2 before...
+[1m   CVE-2021-45452[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/44426/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m44427
+[1m   Affected spec: [0m<2.2.26
+[1m   ADVISORY: [0mDjango 2.2.26, 3.2.11 and 4.0.1 include a fix for
+   CVE-2021-45116: An issue was discovered in Django 2.2 before 2.2.26, 3.2...
+[1m   CVE-2021-45116[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/44427/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m44423
+[1m   Affected spec: [0m<2.2.26
+[1m   ADVISORY: [0mDjango 2.2.26, 3.2.11 and 4.0.1 include a fix for
+   CVE-2021-45115: UserAttributeSimilarityValidator incurred significant...
+[1m   CVE-2021-45115[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/44423/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m33300
+[1m   Affected spec: [0m>=1.10a1,<1.10.7
+[1m   ADVISORY: [0mDjango version 1.10.7, 1.9.13 and 1.8.18 include a fix for
+   CVE-2017-7233: Django 1.10 before 1.10.7, 1.9 before 1.9.13, and 1.8...
+[1m   CVE-2017-7233[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/33300/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m49733
+[1m   Affected spec: [0m<3.2.14
+[1m   ADVISORY: [0mDjango 3.2.14 and 4.0.6 include a fix for CVE-2022-34265:
+   Potential SQL injection via Trunc(kind) and Extract(lookup_name)...
+[1m   CVE-2022-34265[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/49733/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m60132
+[1m   Affected spec: [0m<1.11.16
+[1m   ADVISORY: [0mDjango 1.11.16, 2.0.9 and 2.1.1 include a fix for a Race
+   Condition vulnerability that could lead to data...
+[1m   PVE-2023-60132[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/60132/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m61586
+[1m   Affected spec: [0m<3.2.22
+[1m   ADVISORY: [0mAffected versions of Django are vulnerable to Denial-of-
+   Service via django.utils.text.Truncator. The django.utils.text.Truncator...
+[1m   CVE-2023-43665[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/61586/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m60956
+[1m   Affected spec: [0m<3.2.21
+[1m   ADVISORY: [0mAffected versions of Django are vulnerable to potential
+   Denial of Service via certain inputs with a very large number of Unicode...
+[1m   CVE-2023-41164[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/60956/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m77119
+[1m   Affected spec: [0m<4.2.21
+[1m   ADVISORY: [0mAn issue was discovered in Django 4.2 before 4.2.21, 5.1
+   before 5.1.9, and 5.2 before 5.2.1. The django.utils.html.strip_tags()...
+[1m   CVE-2025-32873[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/77119/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m44742
+[1m   Affected spec: [0m<2.2.27
+[1m   ADVISORY: [0mThe {% debug %} template tag in Django 2.2 before 2.2.27,
+   3.2 before 3.2.12, and 4.0 before 4.0.2 does not properly encode the...
+[1m   CVE-2022-22818[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/44742/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m44741
+[1m   Affected spec: [0m<2.2.27
+[1m   ADVISORY: [0mDjango 2.2.27, 3.2.12 and 4.0.2 include a fix for
+   CVE-2022-23833: Denial-of-service possibility in file...
+[1m   CVE-2022-23833[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/44741/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m52945
+[1m   Affected spec: [0m<3.2.17
+[1m   ADVISORY: [0mDjango 3.2.17, 4.0.9 and 4.1.6 includes a fix for
+   CVE-2023-23969: In Django 3.2 before 3.2.17, 4.0 before 4.0.9, and 4.1...
+[1m   CVE-2023-23969[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/52945/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m38752
+[1m   Affected spec: [0m<2.2.16
+[1m   ADVISORY: [0mAn issue was discovered in Django 2.2 before 2.2.16, 3.0
+   before 3.0.10, and 3.1 before 3.1.1 (when Python 3.7+ is used). The...
+[1m   CVE-2020-24584[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/38752/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m38749
+[1m   Affected spec: [0m<2.2.16
+[1m   ADVISORY: [0mDjango 2.2.16, 3.0.10 and 3.1.1 include a fix for
+   CVE-2020-24583: An issue was discovered in Django 2.2 before 2.2.16, 3.0...
+[1m   CVE-2020-24583[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/38749/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m81270
+[1m   Affected spec: [0m<4.2.26
+[1m   ADVISORY: [0mCVE-2025-64459: Affected versions of the Django package are
+   vulnerable to SQL Injection due to improper input validation, allowing the...
+[1m   CVE-2025-64459[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/81270/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m81269
+[1m   Affected spec: [0m<4.2.26
+[1m   ADVISORY: [0mCVE-2025-64458: Affected versions of the Django package are
+   vulnerable to Denial of Service (DoS) due to slow Unicode NFKC...
+[1m   CVE-2025-64458[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/81269/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m79173
+[1m   Affected spec: [0m<4.2.24
+[1m   ADVISORY: [0mAffected versions of the Django package are vulnerable to
+   SQL Injection due to insufficient input sanitization in FilteredRelation...
+[1m   CVE-2025-57833[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/79173/f17[0m
+
+
+[31m-> Vulnerability found in django version 1.10.5
+[0m[1m   Vulnerability ID: [0m40637
+[1m   Affected spec: [0m>=1.7,<2.2.24
+[1m   ADVISORY: [0mAffected versions of the Django package are vulnerable to
+   Path Traversal due to improper validation of file paths in the...
+[1m   CVE-2021-33203[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/40637/f17[0m
+
+
+[31m-> Vulnerability found in wheel version 0.37.0
+[0m[1m   Vulnerability ID: [0m84961
+[1m   Affected spec: [0m<0.46.2
+[1m   ADVISORY: [0mAffected versions of the wheel package are vulnerable to
+   Path Traversal due to applying extracted file permissions using an...
+[1m   CVE-2026-24049[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/84961/f17[0m
+
+
+[31m-> Vulnerability found in wheel version 0.37.0
+[0m[1m   Vulnerability ID: [0m51499
+[1m   Affected spec: [0m<0.38.1
+[1m   ADVISORY: [0mWheel 0.38.1 includes a fix for CVE-2022-40898: An issue
+   discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier...
+[1m   CVE-2022-40898[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/51499/f17[0m
+
+ Scan was completed. 67 vulnerabilities were found. 
+
++==============================================================================+
+[32m[1m   REMEDIATIONS[0m
+
+  67 vulnerabilities were found in 8 packages. For detailed remediation & fix 
+  recommendations, upgrade to a commercial license. 
+
++==============================================================================+[0m
