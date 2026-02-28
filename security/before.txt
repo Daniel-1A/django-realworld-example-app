@@ -1,0 +1,201 @@
++==============================================================================+
+
+                               /$$$$$$            /$$
+                              /$$__  $$          | $$
+           /$$$$$$$  /$$$$$$ | $$  \__//$$$$$$  /$$$$$$   /$$   /$$
+          /$$_____/ |____  $$| $$$$   /$$__  $$|_  $$_/  | $$  | $$
+         |  $$$$$$   /$$$$$$$| $$_/  | $$$$$$$$  | $$    | $$  | $$
+          \____  $$ /$$__  $$| $$    | $$_____/  | $$ /$$| $$  | $$
+          /$$$$$$$/|  $$$$$$$| $$    |  $$$$$$$  |  $$$$/|  $$$$$$$
+         |_______/  \_______/|__/     \_______/   \___/   \____  $$
+                                                          /$$  | $$
+                                                         |  $$$$$$/
+  by pyup.io                                              \______/
+
++==============================================================================+
+
+ [1mREPORT[0m 
+
+  Safety [1mv2.3.5[0m is scanning for [1mVulnerabilities[0m[1m...[0m
+[1m  Scanning dependencies[0m in your [1menvironment:[0m
+
+  -> /usr/local/lib/python3.6/site-packages
+
+  Using [1mnon-commercial database[0m
+[1m  Found and scanned 20 packages[0m
+  Timestamp [1m2026-02-28 21:10:53[0m
+[1m  16[0m[1m vulnerabilities found[0m
+[1m  0[0m[1m vulnerabilities ignored[0m
+
++==============================================================================+
+ [31m[1mVULNERABILITIES FOUND[0m 
++==============================================================================+
+
+[31m-> Vulnerability found in zipp version 3.6.0
+[0m[1m   Vulnerability ID: [0m72132
+[1m   Affected spec: [0m<3.19.1
+[1m   ADVISORY: [0mA Denial of Service (DoS) vulnerability exists in the
+   jaraco/zipp library. The vulnerability is triggered when processing a...
+[1m   CVE-2024-5569[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72132/f17[0m
+
+
+[31m-> Vulnerability found in wheel version 0.37.0
+[0m[1m   Vulnerability ID: [0m84961
+[1m   Affected spec: [0m<0.46.2
+[1m   ADVISORY: [0mAffected versions of the wheel package are vulnerable to
+   Path Traversal due to applying extracted file permissions using an...
+[1m   CVE-2026-24049[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/84961/f17[0m
+
+
+[31m-> Vulnerability found in wheel version 0.37.0
+[0m[1m   Vulnerability ID: [0m51499
+[1m   Affected spec: [0m<0.38.1
+[1m   ADVISORY: [0mWheel 0.38.1 includes a fix for CVE-2022-40898: An issue
+   discovered in Python Packaging Authority (PyPA) Wheel 0.37.1 and earlier...
+[1m   CVE-2022-40898[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/51499/f17[0m
+
+
+[31m-> Vulnerability found in urllib3 version 1.26.20
+[0m[1m   Vulnerability ID: [0m84031
+[1m   Affected spec: [0m>=1.22,<2.6.3
+[1m   ADVISORY: [0mAffected versions of the urllib3 package are vulnerable to
+   Denial of Service (DoS) due to redirect handling that drains connections...
+[1m   CVE-2026-21441[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/84031/f17[0m
+
+
+[31m-> Vulnerability found in urllib3 version 1.26.20
+[0m[1m   Vulnerability ID: [0m82332
+[1m   Affected spec: [0m>=1.0,<2.6.0
+[1m   ADVISORY: [0mAffected versions of the urllib3 package are vulnerable to
+   Denial of Service (DoS) due to improper handling of highly compressed HTTP...
+[1m   CVE-2025-66471[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/82332/f17[0m
+
+
+[31m-> Vulnerability found in urllib3 version 1.26.20
+[0m[1m   Vulnerability ID: [0m77744
+[1m   Affected spec: [0m<2.5.0
+[1m   ADVISORY: [0murllib3 is a user-friendly HTTP client library for Python.
+   Prior to 2.5.0, it is possible to disable redirects for all requests by...
+[1m   CVE-2025-50181[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/77744/f17[0m
+
+
+[31m-> Vulnerability found in urllib3 version 1.26.20
+[0m[1m   Vulnerability ID: [0m82331
+[1m   Affected spec: [0m>=1.24,<2.6.0
+[1m   ADVISORY: [0mAffected versions of the urllib3 package are vulnerable to
+   Denial of Service (DoS) due to allowing an unbounded number of content-...
+[1m   CVE-2025-66418[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/82331/f17[0m
+
+
+[31m-> Vulnerability found in setuptools version 57.5.0
+[0m[1m   Vulnerability ID: [0m72236
+[1m   Affected spec: [0m<70.0.0
+[1m   ADVISORY: [0mAffected versions of Setuptools allow for remote code
+   execution via its download functions. These functions, which are used to...
+[1m   CVE-2024-6345[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/72236/f17[0m
+
+
+[31m-> Vulnerability found in setuptools version 57.5.0
+[0m[1m   Vulnerability ID: [0m52495
+[1m   Affected spec: [0m<65.5.1
+[1m   ADVISORY: [0mSetuptools 65.5.1 includes a fix for CVE-2022-40897: Python
+   Packaging Authority (PyPA) setuptools before 65.5.1 allows remote...
+[1m   CVE-2022-40897[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/52495/f17[0m
+
+
+[31m-> Vulnerability found in setuptools version 57.5.0
+[0m[1m   Vulnerability ID: [0m76752
+[1m   Affected spec: [0m<78.1.1
+[1m   ADVISORY: [0mAffected versions of Setuptools are vulnerable to Path
+   Traversal via PackageIndex.download(). The impact is Arbitrary File...
+[1m   CVE-2025-47273[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/76752/f17[0m
+
+
+[31m-> Vulnerability found in requests version 2.27.1
+[0m[1m   Vulnerability ID: [0m77680
+[1m   Affected spec: [0m<2.32.4
+[1m   ADVISORY: [0mRequests is an HTTP library. Due to a URL parsing issue,
+   Requests releases prior to 2.32.4 may leak .netrc credentials to third...
+[1m   CVE-2024-47081[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/77680/f17[0m
+
+
+[31m-> Vulnerability found in requests version 2.27.1
+[0m[1m   Vulnerability ID: [0m58755
+[1m   Affected spec: [0m>=2.3.0,<2.31.0
+[1m   ADVISORY: [0mAffected versions of Requests are vulnerable to proxy
+   credential leakage. When redirected to an HTTPS endpoint, the Proxy-...
+[1m   CVE-2023-32681[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/58755/f17[0m
+
+
+[31m-> Vulnerability found in requests version 2.27.1
+[0m[1m   Vulnerability ID: [0m71064
+[1m   Affected spec: [0m<2.32.2
+[1m   ADVISORY: [0mAffected versions of Requests, when making requests through
+   a Requests `Session`, if the first request is made with `verify=False` to...
+[1m   CVE-2024-35195[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/71064/f17[0m
+
+
+[31m-> Vulnerability found in pip version 21.2.4
+[0m[1m   Vulnerability ID: [0m79883
+[1m   Affected spec: [0m<25.2
+[1m   ADVISORY: [0mAffected versions of the pip package are vulnerable to
+   Arbitrary File Overwrite due to improper validation of symbolic link...
+[1m   CVE-2025-8869[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/79883/f17[0m
+
+
+[31m-> Vulnerability found in pip version 21.2.4
+[0m[1m   Vulnerability ID: [0m75180
+[1m   Affected spec: [0m<25.0
+[1m   ADVISORY: [0mPip solves a security vulnerability that previously allowed
+   maliciously crafted wheel files to execute unauthorized code during...
+[1m   PVE-2025-75180[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/75180/f17[0m
+
+
+[31m-> Vulnerability found in pip version 21.2.4
+[0m[1m   Vulnerability ID: [0m62044
+[1m   Affected spec: [0m<23.3
+[1m   ADVISORY: [0mAffected versions of Pip are vulnerable to Command
+   Injection. When installing a package from a Mercurial VCS URL (ie "pip...
+[1m   CVE-2023-5752[0m
+[1m   For more information, please visit
+   [0mhttps://data.safetycli.com/v/62044/f17[0m
+
+ Scan was completed. 16 vulnerabilities were found. 
+
++==============================================================================+
+[32m[1m   REMEDIATIONS[0m
+
+  16 vulnerabilities were found in 6 packages. For detailed remediation & fix 
+  recommendations, upgrade to a commercial license. 
+
++==============================================================================+[0m
