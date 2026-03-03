@@ -5,3 +5,5 @@ djangorestframework==3.4.4
 PyJWT==2.4.0
 six==1.10.0
 requests>=2.27.0
+dj-database-url
+psycopg2-binary

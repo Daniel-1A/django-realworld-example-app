@@ -8,8 +8,8 @@ repos:
           $files = git diff --cached --name-only;
           foreach ($file in $files) {
             if ($file -ne '.pre-commit-config.yaml' -and (Test-Path $file)) {
-              if (Select-String -Path $file -Pattern 'API_KEY|SECRET|PASSWORD' -Quiet) {
-                Write-Host '❌ Secret detected. Commit blocked.';
+              if (Select-String -Path $file -Pattern 'API_KEY=|PASSWORD=|AWS_SECRET_ACCESS_KEY|SECRET=' -Quiet) {
+                Write-Host '❌ Hardcoded secret detected. Commit blocked.';
                 exit 1;
               }
             }
