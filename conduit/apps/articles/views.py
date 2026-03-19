@@ -17,7 +17,13 @@ class ArticleViewSet(mixins.CreateModelMixin,
                      viewsets.GenericViewSet):
 
     lookup_field = 'slug'
-    queryset = Article.objects.select_related('author', 'author__user')
+    queryset = Article.objects.select_related(
+        'author',
+        'author__user'
+    ).prefetch_related(
+        'tags',
+        'favorited_by'
+    )
     permission_classes = (IsAuthenticatedOrReadOnly,)
     renderer_classes = (ArticleJSONRenderer,)
     serializer_class = ArticleSerializer

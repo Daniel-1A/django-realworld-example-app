@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'conduit.apps.articles',
     'conduit.apps.authentication',
     'conduit.apps.core',
+    'debug_toolbar',
     'conduit.apps.profiles',
 ]
 
@@ -56,8 +57,13 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+INTERNAL_IPS = [
+    "127.0.0.1",
 ]
 
 ROOT_URLCONF = 'conduit.urls'
@@ -86,10 +92,10 @@ WSGI_APPLICATION = 'conduit.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL')
+        default=os.environ.get('DATABASE_URL'),
+        conn_max_age=600
     )
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators

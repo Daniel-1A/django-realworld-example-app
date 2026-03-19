@@ -7,3 +7,6 @@ six==1.10.0
 requests>=2.27.0
 dj-database-url
 psycopg2-binary
+django-cors-headers
+django-extensions
+django-debug-toolbar
