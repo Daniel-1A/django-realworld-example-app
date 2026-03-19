@@ -155,8 +155,6 @@ Fue seleccionado porque:
 - Realiza muchas consultas a la base de datos
 - Tiene impacto directo en el rendimiento
 
-Según el análisis del Delivery 5 :contentReference[oaicite:0]{index=0}, este módulo realiza consultas dinámicas y joins que incrementan el tiempo de respuesta cuando hay muchos datos.
-
 ---
 
 ## 8. Problema identificado
@@ -224,7 +222,7 @@ Mejora aproximada: 99% :contentReference[oaicite:1]{index=1}
   - Antes: 497.92 ms  
   - Después: 105.80 ms  
 
-Mejora general: entre 3x y 70% dependiendo la métrica :contentReference[oaicite:2]{index=2}  
+Mejora general: entre 3x y 70% 
 
 ---
 
@@ -237,7 +235,6 @@ Para realizar las pruebas se utilizó:
 - Pruebas secuenciales  
 - Pruebas de concurrencia (100 usuarios)
 
-Según se muestra en las capturas del documento (páginas 5 y 6) :contentReference[oaicite:3]{index=3}, se evaluó el comportamiento del sistema bajo diferentes cargas.
 
 ---
 
